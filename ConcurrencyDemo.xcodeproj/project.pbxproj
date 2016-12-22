@@ -95,6 +95,7 @@
 				TargetAttributes = {
 					DA02838C1BF90DA900AA4DAC = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = K9G8A2A8Q6;
 						LastSwiftMigration = 0820;
 					};
 				};
@@ -247,7 +248,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = K9G8A2A8Q6;
 				INFOPLIST_FILE = ConcurrencyDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hossam.ConcurrencyDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -259,7 +262,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = K9G8A2A8Q6;
 				INFOPLIST_FILE = ConcurrencyDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hossam.ConcurrencyDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
