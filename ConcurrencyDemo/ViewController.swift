@@ -57,9 +57,11 @@ class ViewController: UIViewController {
 //        
 //    }
 
-      /// global queue
+      /// global queue 全局队列：默认就是并发队列
 //    @IBAction func didClickOnStart(_ sender: AnyObject) {
 //        let queue = DispatchQueue.global(qos: .default)
+    
+          /// main queue 主队列：默认就是串行队列
 //        let main = DispatchQueue.main
 //        
 //        queue.async {
@@ -91,7 +93,7 @@ class ViewController: UIViewController {
 //        }
 //    }
     
-    /// Serial Queue
+      /// Serial Queue DispatchQueue 默认创建的是串行队列
 //    @IBAction func didClickOnStart(_ sender: AnyObject) {
 //        let serialQueue = DispatchQueue(label: "serialQueue1")
 //        let main = DispatchQueue.main
@@ -153,7 +155,7 @@ class ViewController: UIViewController {
         }
         queue.addOperation(operation2)
         
-        
+
         let operation3 = BlockOperation(block: {
             let img3 = Downloader.downloadImageWithURL(imageURLs[2])
             main.addOperation({
@@ -181,7 +183,7 @@ class ViewController: UIViewController {
     
     @IBAction func sliderValueChanged(_ sender: UISlider) {
         
-        self.sliderValueLabel.text = "\(sender.value * 100.0)"
+        self.sliderValueLabel.text = "\(sender.value * 100)"
     }
 
 }
